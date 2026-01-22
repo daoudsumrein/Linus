@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linuz Eliazar Borillo - Resume</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 20px;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px 30px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+        
+        .header .subtitle {
+            font-size: 1.2em;
+            opacity: 0.9;
+            margin-bottom: 5px;
+        }
+        
+        .header .grade {
+            font-size: 1em;
+            opacity: 0.8;
+        }
+        
+        .content {
+            padding: 30px;
+        }
+        
+        .section {
+            margin-bottom: 30px;
+        }
+        
+        .section h2 {
+            color: #667eea;
+            font-size: 1.8em;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #667eea;
+        }
+        
+        .section p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+        
+        .skills-grid, .tools-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 10px;
+            margin-top: 15px;
+        }
+        
+        .skill-item, .tool-item {
+            background: linear-gradient(135deg, #667eea15 0%, #764ba215 100%);
+            padding: 12px 15px;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+            transition: transform 0.2s;
+        }
+        
+        .skill-item:hover, .tool-item:hover {
+            transform: translateX(5px);
+        }
+        
+        .projects-list, .hobbies-list {
+            list-style: none;
+            margin-top: 15px;
+        }
+        
+        .projects-list li, .hobbies-list li {
+            padding: 10px 15px;
+            margin-bottom: 8px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border-left: 4px solid #764ba2;
+            position: relative;
+            padding-left: 35px;
+        }
+        
+        .projects-list li::before, .hobbies-list li::before {
+            content: "✓";
+            position: absolute;
+            left: 12px;
+            color: #764ba2;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+        
+        .education-box {
+            background: linear-gradient(135deg, #667eea10 0%, #764ba210 100%);
+            padding: 20px;
+            border-radius: 10px;
+            border: 2px solid #667eea;
+            text-align: center;
+            font-size: 1.1em;
+            font-weight: 500;
+        }
+        
+        .footer {
+            background: #f8f9fa;
+            padding: 20px;
+            text-align: center;
+            color: #666;
+            font-size: 0.9em;
+        }
+        
+        @media (max-width: 600px) {
+            .header h1 {
+                font-size: 2em;
+            }
+            
+            .content {
+                padding: 20px;
+            }
+            
+            .skills-grid, .tools-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Linuz Eliazar Borillo</h1>
+            <div class="subtitle">Student Graphic Designer</div>
+            <div class="grade">Grade 8</div>
+        </div>
+        
+        <div class="content">
+            <div class="section">
+                <h2>About Me</h2>
+                <p>I am a Grade 8 student who is interested in graphic design. I enjoy creating simple designs using colors, text, and images. I like being creative and learning new design ideas. I am still improving my skills and always willing to learn more.</p>
+            </div>
+            
+            <div class="section">
+                <h2>Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-item">Basic graphic design</div>
+                    <div class="skill-item">Logo and poster design</div>
+                    <div class="skill-item">Choosing colors and fonts</div>
+                    <div class="skill-item">Creativity and imagination</div>
+                    <div class="skill-item">Attention to detail</div>
+                    <div class="skill-item">Willingness to learn</div>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2>Tools I Use</h2>
+                <div class="tools-grid">
+                    <div class="tool-item">Canva</div>
+                    <div class="tool-item">Microsoft PowerPoint</div>
+                    <div class="tool-item">Basic drawing apps</div>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2>School Projects</h2>
+                <ul class="projects-list">
+                    <li>Designed posters for school activities</li>
+                    <li>Created simple logos and presentations for class projects</li>
+                    <li>Helped classmates with design layouts</li>
+                </ul>
+            </div>
+            
+            <div class="section">
+                <h2>Education</h2>
+                <div class="education-box">
+                    Grade 8 Student (Currently studying)
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2>Hobbies & Interests</h2>
+                <ul class="hobbies-list">
+                    <li>Drawing and designing</li>
+                    <li>Editing photos</li>
+                    <li>Watching design videos</li>
+                    <li>Exploring new creative ideas</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer">
+            Student Portfolio - Linuz Eliazar Borillo
+        </div>
+    </div>
+</body>
+</html>
